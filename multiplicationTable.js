@@ -4,3 +4,5 @@ const multiplicationTable = (size) => {
 }
 
 console.log(multiplicationTable(3))
+
+// https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/train/javascript
