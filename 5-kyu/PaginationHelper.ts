@@ -1,10 +1,10 @@
-export class PaginationHelper {
+export class PaginationHelper<T> {
   length: number;
   itemsPerPage: number;
-  collection: (string | number)[];
+  collection: T[];
   pageSizes: number[];
 
-  constructor(collection: (string | number)[], itemsPerPage: number) {
+  constructor(collection: T[], itemsPerPage: number) {
     // The constructor takes in an array of items and a integer indicating how many
     // items fit within a single page
 
