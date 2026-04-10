@@ -62,6 +62,7 @@ export class PaginationHelper<T> {
 }
 
 let helper = new PaginationHelper(['a', 'b', 'c', 'd', 'e', 'f'], 4);
+let helper2 = new PaginationHelper([1, 2, 3, 4, 5, 6, 7, 8], 4);
 
 console.log(helper.pageCount()); // should == 2
 console.log(helper.itemCount()); // should == 6
