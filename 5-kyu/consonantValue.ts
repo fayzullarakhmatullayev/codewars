@@ -73,3 +73,27 @@ console.log('-----------------------');
 console.log('DONE');
 
 // https://www.codewars.com/kata/59c633e7dcc4053512000073/train/typescript
+
+/**
+ * 
+ *  THE BEST SOLUTION
+ *  -------------------------
+  const VOWELS = 'aeiou';
+
+  export function solve(s: string) {
+    let max = 0;
+    let current = 0;
+
+    for (const char of s) {
+      if (VOWELS.includes(char)) {
+        max = Math.max(max, current);
+        current = 0;
+      } else {
+        current += char.charCodeAt(0) - 96;
+      }
+    }
+
+    return Math.max(max, current);
+  }
+ * 
+ */
